@@ -39,3 +39,9 @@ sum = numbers.reduce {|sum, num| sum + num}
 sum2 = numbers.reduce(100) {|sum, num| sum + num}   # Assigning initial value for accumulator
 puts sum
 puts sum2
+
+grades= []
+  3.times do |i|
+    print "Enter grade #{i + 1}: "
+    grades << gets.chomp.to_i # Shovel operator used to append on arrays similar to .push
+  end
